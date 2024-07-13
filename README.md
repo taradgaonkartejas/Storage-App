@@ -34,7 +34,7 @@ A storage web application built with React, Node.js, MySQL, Multer, Prisma, and 
    cd storage-web-app
 
 2. Install dependencies
-
+   ```sh
    cd server
    npm install   
 
@@ -42,36 +42,37 @@ A storage web application built with React, Node.js, MySQL, Multer, Prisma, and 
 
    Create a MySQL database.
    Update the DATABASE_URL in the .env file with your database credentials.
-
+   ```sh
    DATABASE_URL="mysql://user:password@localhost:3306/database_name"
 
 4. Generate Prisma client
-
+   ```sh
    npx prisma generate
    npx prisma migrate dev --name init
 
 5. Start the backend server
-
+   ```sh
    npm run dev
 
 
 ### Frontend Setup
 
 1. Navigate to the client directory
-
+   ```sh
    cd ../client
 
 2. Install dependencies
-
+   ```sh
    npm install
 
 3. Set up environment variables
 
    Create a .env file in the client directory with the following content:
+   ```sh
    VITE_SERVER_URL=http://localhost:3000
 
-4. Start the frontend development server
-
+5. Start the frontend development server
+   ```sh
    npm run dev
 
 
