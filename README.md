@@ -76,21 +76,23 @@ A storage web application built with React, Node.js, MySQL, Multer, Prisma, and 
    npm run dev
 
 
+## Project Structure
+   ```sh
+   storage-web-app/
+   ├── server/              # Backend source code
+   │   ├── prisma/          # Prisma schema and migrations
+   │   ├── src/             # Source code
+   │   ├── .env             # Environment variables
+   │   ├── package.json     # NPM configuration
+   │   └── ...              # Other backend-related files
+   ├── client/              # Frontend source code
+   │   ├── src/             # Source code
+   │   ├── public/          # Public assets
+   │   ├── .env             # Environment variables
+   │   ├── package.json     # NPM configuration
+   │   └── ...              # Other frontend-related files
+   └── README.md            # Project documentation
 
-storage-web-app/
-├── server/              # Backend source code
-│   ├── prisma/          # Prisma schema and migrations
-│   ├── src/             # Source code
-│   ├── .env             # Environment variables
-│   ├── package.json     # NPM configuration
-│   └── ...              # Other backend-related files
-├── client/              # Frontend source code
-│   ├── src/             # Source code
-│   ├── public/          # Public assets
-│   ├── .env             # Environment variables
-│   ├── package.json     # NPM configuration
-│   └── ...              # Other frontend-related files
-└── README.md            # Project documentation
 
 
 
