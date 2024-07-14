@@ -106,9 +106,9 @@ const FileList: React.FC = () => {
   }
 
   return (
-    <div className='flex justify-center items-center bg-slate-300 h-screen'>
+    <div className='flex justify-center items-center bg-slate-300 h-full'>
       {files.length > 0 ? (
-        <div className='bg-white w-[95%] h-[95%] block min-w-[30rem] p-6 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'>
+        <div className='absolute bottom-9 bg-white w-[95%] h-[85%] block min-w-[30rem] p-6 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700'>
           <div className="flex justify-end mb-4">
             <Button
               className="text-white hover:text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
@@ -123,7 +123,7 @@ const FileList: React.FC = () => {
               Download Selected
             </Button>
           </div>
-          <div className='overflow-auto h-[80vh]'>
+          <div className='overflow-auto h-[78vh]'>
             <Table>
               <TableCaption>A list of your recent files.</TableCaption>
               <TableHeader>
