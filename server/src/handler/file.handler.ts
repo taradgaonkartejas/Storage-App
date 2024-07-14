@@ -8,6 +8,7 @@ const createFile = async (file: any) => {
             originalName: file.originalname,
             filename: file.originalname,
             content: file.buffer,
+            size:file.size
         },
     });
 }
@@ -18,7 +19,8 @@ const getAllFiles = async () => {
             id: true,
             originalName: true,
             filename: true,
-            createdAt: true
+            createdAt: true,
+            size:true
         }
     });
 }

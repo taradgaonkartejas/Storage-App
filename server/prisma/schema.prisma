@@ -18,6 +18,7 @@ model File {
   originalName String
   filename     String
   content      Bytes
+  size         Int 
   createdAt    DateTime @default(now())
 }
 
